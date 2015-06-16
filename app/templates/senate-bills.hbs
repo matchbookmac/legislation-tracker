@@ -1,0 +1,13 @@
+<div class="col-md-8 col-md-offset-2">
+  <ul>
+    {{#each bill in model}}
+      <li>
+        Bill ID:
+        <span class="bill-name">{{bill.bill_id}}</span>
+        <br>
+        Bill Description:
+        <span class="bill-description">{{bill.description}}</span>
+      </li>
+    {{/each}}
+  </ul>
+</div>

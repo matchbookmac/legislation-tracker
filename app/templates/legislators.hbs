@@ -1,0 +1,16 @@
+
+<div class="col-md-6 col-md-offset-3">
+  <h1>Legislator Lookup</h1>
+  <form>
+    <div class="form-group">
+      <div class="form-inline">
+        <label for="zip">Zip</label>
+        {{input value=zip id="zip" class="form-control"}}
+      </div>
+    </div>
+
+    <button class="btn btn-primary" {{action "submit"}}>Submit</button>
+  </form>
+
+  {{outlet}}
+</div>
