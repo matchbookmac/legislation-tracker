@@ -14,6 +14,7 @@ Router.map(function() {
     this.resource('house-bills', { path: 'house' });
     this.resource('senate-bills', { path: 'senate' });
   })
+  this.resource('committees');
 });
 
 export default Router;
