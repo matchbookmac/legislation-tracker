@@ -1,3 +1,25 @@
+## Q & A
+
+<a href="APP LINK IF APPLICABLE" target="#"><APP LINK NAME></a>
+
+By Ian MacDonald (<a href="https://github.com/matchbookmac" target="#">GitHub</a>)
+
+@ Epicodus Programming School, Portland, OR
+
+GNU General Public License, version 3 (see below). Copyright (c) 2015 Ian C. MacDonald.
+
+### Description
+
+**Q & A**
+
+This App is only partially complete. I was unable to successfully add answers to questions. I was stuck on being able to identify the model of the question controller while inside the newAnswer controller. As a result, I could not push the new answer object into the question's answer array.
+
+Consequently, I was also unable to fulfill the other requirements of being able to edit answers and questions.
+
+### Author(s)
+
+Ian MacDonald and 
+
 # Thomas-jefferson
 
 This README outlines the details of collaborating on this Ember application.
@@ -25,29 +47,19 @@ You will need the following things properly installed on your computer.
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
 
-Make use of the many generators for code, try `ember help generate` for more details
+### License ###
+Copyright  (C)  2015  Ian C. MacDonald
 
-### Running Tests
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-* `ember test`
-* `ember test --server`
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.

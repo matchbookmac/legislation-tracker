@@ -14,7 +14,12 @@ Router.map(function() {
     this.resource('house-bills', { path: 'house' });
     this.resource('senate-bills', { path: 'senate' });
   })
-  this.resource('committees');
+  this.resource('committees', { path: 'committees'}, function() {
+    this.resource('house-committees', { path: 'house'});
+    this.resource('senate-committees', { path: 'sentate'});
+    this.resource('joint-committees', { path: 'joint'});
+    this.resource('committee', { path: ':committee_id' });
+  });
 });
 
 export default Router;

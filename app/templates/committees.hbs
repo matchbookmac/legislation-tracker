@@ -1,15 +1,7 @@
-<div class="col-md-8 col-md-offset-2">
-  <ul>
-    {{#each chamber in model}}
-      {{#each committee in chamber}}
-        <li>
-          Committee Name:
-          <span class="committee-name">{{committee.name}}</span>
-          <br>
-          Committee Chamber:
-          <span class="committee-chamber">{{committee.chamber}}</span>
-        </li>
-      {{/each}}
-    {{/each}}
-  </ul>
+<div class="col-md-6 col-md-offset-3">
+  {{#link-to 'house-committees' class="btn btn-primary"}}House Committees{{/link-to}}
+  {{#link-to 'senate-committees' class="btn btn-primary"}}Senate Committees{{/link-to}}
+  {{#link-to 'joint-committees' class="btn btn-primary"}}Joint Committees{{/link-to}}
 </div>
+
+{{outlet}}

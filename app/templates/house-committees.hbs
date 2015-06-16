@@ -1,0 +1,13 @@
+<div class="col-md-8 col-md-offset-2">
+  <br>
+  <ul>
+    {{#each committee in model}}
+      <li>
+        {{#link-to 'committee' committee.committee_id}}
+          Committee Name:
+          <span class="committee-name">{{committee.name}}</span>
+        {{/link-to}}
+      </li>
+    {{/each}}
+  </ul>
+</div>
