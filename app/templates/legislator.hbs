@@ -1,27 +1,25 @@
-<div class="col-md-8 col-md-offset-2">
-  {{#each legislator in model}}
-    <p>
-      <p class="lead">Legislator Name:
-        {{#link-to 'legislator' legislator.bioguide_id}}
-          <strong class="legislator-name">{{legislator.title}} {{legislator.first_name}} {{legislator.last_name}} </strong>
-        {{/link-to}}
-      </p>
+{{#each legislator in model}}
+  <p>
+    <p class="lead">Legislator Name:
+      {{#link-to 'legislator' legislator.bioguide_id}}
+        <strong class="legislator-name">{{legislator.title}} {{legislator.first_name}} {{legislator.last_name}} </strong>
+      {{/link-to}}
     </p>
-    <p>
-      <strong>State:</strong>
-      <span class="legislator-state">{{legislator.state}}</span>
-    </p>
-    <p>
-      <strong>Party:</strong>
-      <span class="legislator-party">{{legislator.party}}</span>
-    </p>
-    <p>
-      <strong>chamber:</strong>
-      <span class="legislator-chamber">{{legislator.chamber}}</span>
-    </p>
-    <p>
-      <strong>Contact:</strong>
-      <a href="{{legislator.contact_form}}" target="#">{{legislator.contact_form}}</a>
-    </p>
-  {{/each}}
-</div>
+  </p>
+  <p>
+    <strong>State:</strong>
+    <span class="legislator-state">{{legislator.state}}</span>
+  </p>
+  <p>
+    <strong>Party:</strong>
+    <span class="legislator-party">{{legislator.party}}</span>
+  </p>
+  <p>
+    <strong>chamber:</strong>
+    <span class="legislator-chamber">{{legislator.chamber}}</span>
+  </p>
+  <p>
+    <strong>Contact:</strong>
+    <a href="{{legislator.contact_form}}" target="#">{{legislator.contact_form}}</a>
+  </p>
+{{/each}}

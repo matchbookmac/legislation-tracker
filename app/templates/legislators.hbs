@@ -1,24 +1,26 @@
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-    <h1>Legislator Lookup</h1>
-    <br>
-    <form>
-      <div class="row">
-        <div class="form-horizontal">
-          <div class="form-group">
-            <label for="zip" class="col-md-1 control-label">Zip</label>
-            <div class="col-md-8">
-              {{input value=zip id="zip" class="form-control"}}
+    <div class="well">
+      <h1 class="text-center">Legislator Lookup</h1>
+      <br>
+      <form>
+        <div class="row">
+          <div class="form-horizontal">
+            <div class="form-group">
+              <label for="zip" class="col-md-1 control-label">Zip</label>
+              <div class="col-md-8">
+                {{input value=zip id="zip" class="form-control"}}
+              </div>
+              <button class="btn btn-primary" {{action "submit"}}>Submit</button>
             </div>
-            <button class="btn btn-primary" {{action "submit"}}>Submit</button>
           </div>
         </div>
-      </div>
-    </form>
+      </form>
+    </div>
   </div>
 </div>
 <div class="row">
-  <div class="col-md-8 col-md-offset-2">
+  <div class="col-md-6 col-md-offset-3">
     {{outlet}}
   </div>
 </div>
