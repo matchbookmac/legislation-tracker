@@ -3,11 +3,13 @@
     {{#each bill in model}}
       <li>
         Bill ID:
-        <span class="bill-name">{{bill.bill_id}}</span>
+        {{#link-to 'bill' bill.bill_id}}
+          <span class="bill-name">{{bill.bill_id}}</span>
+        {{/link-to}}
         <br>
         Bill Description:
         <span class="bill-description">{{bill.description}}</span>
-      </li>    
+      </li>
     {{/each}}
   </ul>
 </div>

@@ -13,6 +13,7 @@ Router.map(function() {
   this.resource('bills', { path: 'bills' }, function () {
     this.resource('house-bills', { path: 'house' });
     this.resource('senate-bills', { path: 'senate' });
+    this.resource('bill', { path: ':bill_id' });
   })
   this.resource('committees', { path: 'committees'}, function() {
     this.resource('house-committees', { path: 'house'});

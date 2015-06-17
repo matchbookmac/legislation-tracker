@@ -1,0 +1,37 @@
+<div class="col-md-8 col-md-offset-2">
+
+    {{#each bill in model}}
+
+        <p>
+          <strong>Bill ID:</strong>
+          {{#link-to 'bills' bill.id}}
+            <span class="bill-name">{{bill.bill_id}}</span>
+          {{/link-to}}
+        </p>
+        <p>
+          <strong>Bill Description:</strong>
+          <span class="bill-description">{{bill.official_title}}</span>
+        </p>
+        <p>
+          <strong>Sponsor:</strong>
+          <span>{{bill.sponsor.title}} {{bill.sponsor.first_name}} {{bill.sponsor.last_name}} </span>
+        </p>
+        <p>
+          <strong>Committees:</strong>
+          {{#each committee in bill.committee_ids}}
+            <ul>
+              <li>
+                {{#link-to 'committee' committee}}
+                  {{committee}}
+                {{/link-to}}
+              </li>
+            </ul>
+          {{/each}}
+        </p>
+        <p>
+          <strong>URL:</strong>
+          <a href="{{bill.urls.congress}}" target="#">{{bill.urls.congress}}</a>
+        </p>
+    {{/each}}
+
+</div>
